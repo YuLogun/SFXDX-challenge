@@ -1,0 +1,40 @@
+$dark-blue: #003a70;
+
+.cardContainer {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 3px 5px $dark-blue;
+  border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+
+  span {
+    color: $dark-blue;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.image {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 667px) {
+    min-width: 7em;
+  }
+}
+
+.name {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+}

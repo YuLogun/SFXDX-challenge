@@ -1,0 +1,22 @@
+$dark-blue: #003a70;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  h1,
+  h3 {
+    color: $dark-blue;
+  }
+
+  img {
+    width: 8em;
+  }
+}
+
+.name {
+  text-transform: capitalize;
+}

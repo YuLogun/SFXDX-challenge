@@ -1,0 +1,32 @@
+$dark-blue: #003a70;
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2em 0;
+
+  h1 {
+    color: $dark-blue;
+  }
+
+  input {
+    margin: 2em 0;
+  }
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em 1.5em;
+
+  @media screen and (max-width: 667px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.img {
+  width: 40%;
+}
